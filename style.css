@@ -133,15 +133,6 @@
 }
 .container header .menu {
   display: none;
-  font-size: 29px;
-  color: #ADBED6;
-  padding: 5px 8px;
-  border: 1px solid #ccd3e9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2px;
-  margin: 20px;
 }
 .container .nav-main {
   display: flex;
@@ -162,7 +153,22 @@
   .container header .contact-and-logo .contact {
     display: none;
   }
+  .container header .contact-and-logo .logo {
+    width: 220px;
+  }
   .container header .header-right {
     display: none;
+  }
+  .container header .menu {
+    display: block;
+    font-size: 29px;
+    color: #ADBED6;
+    padding: 5px 8px;
+    border: 1px solid #ccd3e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
