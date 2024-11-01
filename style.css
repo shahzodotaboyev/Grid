@@ -28,6 +28,9 @@
 }
 .container header {
   width: 100%;
+  position: sticky;
+  background: #fff;
+  top: 0;
   display: flex;
   height: 64px;
   align-items: center;
@@ -147,11 +150,14 @@
   display: flex;
 }
 .container main aside {
-  max-width: 265px;
+  max-width: 260px;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  margin-top: 64px;
   overflow-y: scroll;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -176,6 +182,115 @@
 }
 .container main aside i:hover {
   color: #315FE9;
+}
+.container main menu {
+  width: 100%;
+  gap: 20px;
+  margin-left: 265px;
+}
+.container main .card {
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  filter: brightness(50%);
+  justify-content: space-between;
+}
+.container main .card h2 {
+  color: #fff;
+  font-size: 18px;
+}
+.container main .card .card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container main .card .card-bottom p {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container main .card .card-bottom p i {
+  font-size: 20px;
+}
+.container main .card .card-bottom a {
+  padding: 4px 6px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 8px 0;
+  background: #42BA96;
+}
+.container main .card1 {
+  background-image: url(./img/pic-1.png);
+  grid-area: card1;
+}
+.container main .card2 {
+  grid-area: card2;
+  background-image: url(./img/pic-2.png);
+}
+.container main .card3 {
+  grid-area: card3;
+  background-image: url(./img/pic-3.png);
+}
+.container main .card4 {
+  grid-area: card4;
+  background-image: url(./img/pic-4.png);
+}
+.container main .card5 {
+  grid-area: card5;
+  background-image: url(./img/pic-5.png);
+}
+.container main .card6 {
+  grid-area: card6;
+  background-image: url(./img/pic-6.png);
+}
+.container main .card7 {
+  grid-area: card7;
+  background-image: url(./img/pic-7.png);
+}
+.container main .card8 {
+  grid-area: card8;
+  background-image: url(./img/pic-8.png);
+}
+.container main .card9 {
+  grid-area: card9;
+  background-image: url(./img/pic-13.png);
+}
+.container main .card10 {
+  grid-area: card10;
+  background-image: url(./img/pic-14.png);
+}
+.container main .card11 {
+  grid-area: card11;
+  background-image: url(./img/pic-15.png);
+}
+.container main .card12 {
+  grid-area: card12;
+  background-image: url(./img/pic-16.jpg);
+}
+.container main .card13 {
+  grid-area: card13;
+  background-image: url(./img/pic-17.png);
+}
+.container main .card14 {
+  grid-area: card14;
+  background-image: url(./img/pic-18.png);
+}
+.container main .card15 {
+  grid-area: card15;
+  background-image: url(./img/pic-19.png);
+}
+.container main .card16 {
+  grid-area: card16;
+  background-image: url(./img/pic-20.png);
 }
 
 @media (max-width: 991px) {
