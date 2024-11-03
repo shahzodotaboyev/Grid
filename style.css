@@ -195,6 +195,7 @@
   border-radius: 10px;
   gap: 5px;
   font-size: 25px;
+  cursor: pointer;
 }
 .container main aside i span {
   font-size: 16px;
