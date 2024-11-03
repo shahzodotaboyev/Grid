@@ -43,169 +43,301 @@
         <main>
             <aside>
                 <i class='bx bx-home-alt'><span>Home</span></i>
-                <i class='bx bx-cloud-lightning'><span>Service</span></i>
-                <i class='bx bx-phone'><span>Contacts</span></i>
-                <i class='bx bx-cog'><span>Setting</span></i>
-                <i class='bx bx-cog'><span>Setting</span></i>
-                <i class='bx bx-book-open'><span>Documention</span></i>
-                <i class='bx bxs-hot'><span>Features</span></i>
-                <i class='bx bx-shopping-bag'><span>Card</span></i>
-                <i class='bx bx-pencil'><span>Blog</span></i>
-                <i class='bx bxs-florist'><span>About</span></i>
-                <i class='bx bxs-book-content'><span>Portfolio</span></i>
-                <i class='bx bx-money-withdraw'><span>Pricing</span></i>
-                <i class='bx bx-lock-open-alt'><span>Terms</span></i>
-                <i class='bx bx-mail-send'><span>Support</span></i>
-                <!-- <i class='bx bx-lock-open-alt'><span>Terms</span></i> -->
-                <!-- <i class='bx bx-lock-open-alt'><span>Terms</span></i> -->
+                <i onclick="asideServise()" class='bx bx-cloud-lightning'><span>Service</span></i>
+                <i onclick="asideContact()" class='bx bx-phone'><span>Contacts</span></i>
+                <i onclick="asideSetting()" class='bx bx-cog'><span>Setting</span></i>
+                <i onclick="asideSetting()" class='bx bx-cog'><span>Setting</span></i>
+                <i onclick="asideDocumentation()" class='bx bx-book-open'><span>Documention</span></i>
+                <i onclick="asideStart()" class='bx bxs-hot'><span>Features</span></i>
+                <i onclick="asideStart()" class='bx bx-shopping-bag'><span>Card</span></i>
+                <i onclick="asideStart()" class='bx bx-pencil'><span>Blog</span></i>
+                <i onclick="asideStart()" class='bx bxs-florist'><span>About</span></i>
+                <i onclick="asideStart()" class='bx bxs-book-content'><span>Portfolio</span></i>
+                <i onclick="asideStart()" class='bx bx-money-withdraw'><span>Pricing</span></i>
+                <i onclick="asideStart()" class='bx bx-lock-open-alt'><span>Terms</span></i>
+                <i onclick="asideStart()" class='bx bx-mail-send'><span>Support</span></i>
+
             </aside>
+            <div class="asideServise">
+                <div class="secrvise-header">
+                    <h2>Set projects to excellence</h2>
+                    <i onclick="closeBox()" class='bx bx-x-circle'></i>
+                    <p>Our team always enjoys interesting projects that are challenging and original. No matter the task
+                        is, we are up to it. While we have the ability of learning new things quickly and can take on
+                        just anything you throw at us, here are a few areas we specialize in.</p>
+                </div>
+                <div class="servise-main">
+                    <div class="box">
+                        <img src="./img/web-app.png" alt="">
+                        <h2>Web applications</h2>
+                        <p>Web apps are the backbone of today's most popular software as a service product. We will help
+                            you succeed by conducting through market research and providing you actionable insights to
+                            position your product in the top.</p><br>
+
+                    </div>
+                    <div class="box">
+                        <img src="./img/mobile-app.png" alt="">
+                        <h2>Mobile applications
+                        </h2>
+                        <p>Over 50% of the smartphone users start using their phone just after waking up in the morning
+                            and spend more than 3 hours per day. Our team can help you design an incredible iOS or
+                            Android application no matter the complexity.</p><br>
+
+                    </div>
+                    <div class="box">
+                        <img src="./img/web-design.png" alt="">
+                        <h2>eCommerce Sites</h2>
+                        <p>Web apps are the backbone of today's most popular software as a service product. We will help
+                            you succeed by conducting through market research and providing you actionable insights to
+                            position your product in the top.
+
+                        </p><br>
+
+                    </div>
+                    <div class="box">
+                        <img src="./img/e-commerce.png" alt="">
+                        <h2>Web portals</h2>
+                        <p>Consumers are driving crazy to online stores and shops in record numbers. Our team can help
+                            you monetize your checkout page, create seamless buying experience on handheld devices,
+                            setup email marketing solution and help you sell more.</p><br>
+
+                    </div>
+                    <div class="box">
+                        <img src="./img/web-portal.png" alt="">
+                        <h2>Web applications</h2>
+                        <p>Web apps are the backbone of today's most popular software as a service product. We will help
+                            you succeed by conducting through market research and providing you actionable insights to
+                            position your product in the top.</p><br>
+
+                    </div>
+                    <div class="box">
+                        <img src="./img/data-driven.png" alt="">
+                        <h2>Data driven apps</h2>
+                        <p>Web apps are the backbone of today's most popular software as a service product. We will help
+                            you succeed by conducting through market research and providing you actionable insights to
+                            position your product in the top.</p><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="asideContact">
+                <i onclick="closeBox()" class='bx bx-x-circle'></i>
+
+                <div class="contact-left">
+                    <h1>Keep in touch</h1>
+                    <form action="">
+                        <input required type="name" placeholder="Your name">
+                        <input required type="gmail" name="" placeholder="email">
+                        <input required type="text" name="" placeholder="Enter your discription here...">
+                        <button>Sent now</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h2>Contacts</h2>
+                    <p><i class='bx bx-envelope'></i>example@eamil.com</p>
+                    <p><i class='bx bx-phone'></i>+604-680-9785</p>
+                    <p><i class='bx bx-map-alt'></i>67 Robson St,British Columbia, Canada</p>
+                    <hr>
+                    <h2>Follow Us OnSocial Media</h2>
+                    <h3>We are active on various social media platforms. Like, share and follow to get updates.</h3>
+                </div>
+            </div>
+            <div class="asideComponents">
+                <i onclick="closeBox()" class='bx bx-x-circle'></i>
+                <h2>
+                    Components
+                </h2>
+                <hr>
+                <div class="inf">
+                    <ul>
+                        <li>Alerts</li>
+                        <li>Background</li>
+                        <li>Badges</li>
+                        <li>Breadcrumb</li>
+                        <li>Buttons</li>
+                        <li>Cards</li>
+                        <li>Carousel</li>
+                        <li>Collapse</li>
+                    </ul>
+                    <ul>
+                        <li>Alerts</li>
+                        <li>Background</li>
+                        <li>Badges</li>
+                        <li>Breadcrumb</li>
+                        <li>Buttons</li>
+                        <li>Cards</li>
+                        <li>Carousel</li>
+                        <li>Collapse</li>
+                    </ul>
+                    <ul>
+                        <li>Alerts</li>
+                        <li>Background</li>
+                        <li>Badges</li>
+                        <li>Breadcrumb</li>
+                        <li>Buttons</li>
+                        <li>Cards</li>
+                        <li>Carousel</li>
+                        <li>Collapse</li>
+                    </ul>
+                    <ul>
+                        <li>Alerts</li>
+                        <li>Background</li>
+                        <li>Badges</li>
+                        <li>Breadcrumb</li>
+                        <li>Buttons</li>
+                        <li>Cards</li>
+                        <li>Carousel</li>
+                        <li>Collapse</li>
+                    </ul>
+                </div>
+                <h2>Plugins</h2>
+                <hr>
+                <div class=" inf2">
+                    <p>Unicons</p>
+                    <p>Loaders</p>
+                    <p> Goole Map</p>
+                </div>
+            </div>
+            <div class="asideDocumentation">
+                <h2>Documentation</h2>
+                
+            </div>
             <menu>
-                <div class="card card1">
-                    <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                <div class="card-list">
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card card2">
-                    <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                <div class="card-list2">
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card card3">
-                    <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card card4"> <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
-                    </div></div>
-                <div class="card card5">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
+
                 </div>
-                <div class="card card6">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+
+                <div class="card-list3">
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card card7">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
+
+
                 </div>
-                <div class="card card8">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                <div class="card-list3">
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card card9">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card card10">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
+
+
                 </div>
-                <div class="card card11">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                <div class="card-list3">
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card card12">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card card13">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card card14">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
+                    <div class="card1">
+                        <h1>Revolutionise Your Workspace With Us At Gridworks</h1>
+                        <div class="card1-bottom">
+                            <p> <i class='bx bx-bulb'></i>Referenning Workspace</p>
+                            <a href="#">Entrepreneurship</a>
+                        </div>
                     </div>
+
                 </div>
-                <div class="card card15">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
-                    </div>
-                </div>
-                <div class="card card16">
-                     <h2>Revolutionise Your Workspace With Us At Gridworks</h2>
-                    <div class="card-bottom">
-                        <p><i class='bx bx-sun'></i>Reffering Workspace</p>
-                        <a href="#">
-                            Startups Weekly
-                        </a>
-                    </div>
-                </div>
+
             </menu>
         </main>
-
     </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>

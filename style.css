@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@media (max-width: 991px) {
+  .container header .contact-and-logo .contact {
+    display: none;
+  }
+  .container header .contact-and-logo .logo {
+    width: 220px;
+  }
+  .container header .header-right {
+    display: none;
+  }
+  .container header .menu {
+    display: block;
+    font-size: 29px;
+    color: #ADBED6;
+    padding: 5px 8px;
+    border: 1px solid #ccd3e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin: 20px;
+  }
+  .container main aside {
+    display: none;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -14,7 +40,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
+  background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -28,28 +55,26 @@
 }
 .container header {
   width: 100%;
-  z-index: 100;
   position: sticky;
-  background: #fff;
   top: 0;
+  z-index: 100;
+  background: #fff;
   display: flex;
-  height: 64px;
   align-items: center;
   justify-content: space-between;
+  height: 64px;
 }
 .container header .contact-and-logo {
   display: flex;
-  width: auto;
-  height: 100%;
+  align-items: center;
 }
 .container header .contact-and-logo .logo {
   width: 250px;
   height: 100%;
   background-color: var(--bg-color);
   display: flex;
-  padding: 15px;
   align-items: center;
-  justify-content: start;
+  padding: 15px;
   gap: 10px;
 }
 .container header .contact-and-logo .logo h2 {
@@ -70,11 +95,6 @@
   border-radius: 50px;
   color: #fff;
 }
-.container header .contact-and-logo .logo .contact {
-  width: 100px;
-  height: 100px;
-  background: #000;
-}
 .container header .contact-and-logo .contact {
   display: flex;
   align-items: center;
@@ -88,12 +108,13 @@
 }
 .container header .contact-and-logo .contact .icons i {
   width: 25px;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25px;
   font-size: 20px;
   color: var(--icon-color);
+  transition: color 0.3s ease;
 }
 .container header .contact-and-logo .contact .icons i:hover {
   color: var(--bg-color);
@@ -124,12 +145,10 @@
   background: #F1F4F8;
   width: 100%;
   color: #ADBED6;
-  padding: a;
   height: 100%;
   font-size: 16px;
-  color: #ADBED6;
   font-weight: 500;
-  padding: 20px;
+  padding: 0 20px;
 }
 .container header .header-right button {
   width: 141px;
@@ -153,10 +172,8 @@
 }
 .container main aside {
   max-width: 260px;
-  align-items: center;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   position: fixed;
   top: 0;
   margin-top: 64px;
@@ -185,140 +202,345 @@
 .container main aside i:hover {
   color: #315FE9;
 }
-.container main menu {
-  width: 100%;
-  gap: 20px;
-  margin-left: 265px;
-  z-index: 1;
+.container main .asideServise {
+  position: fixed;
+  z-index: 1000;
+  width: 700px;
+  height: 600px;
+  background: #fff;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-x: scroll;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  transition: all 0.5s ease;
 }
-.container main .card {
-  width: 300px;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 8px;
-  padding: 10px;
+.container main .asideServise .secrvise-header {
+  padding: 20px 50px;
+  width: 100%;
+  height: 150px;
+  background: #1A2A4E;
   display: flex;
   flex-direction: column;
-  filter: brightness(50%);
-  justify-content: space-between;
-}
-.container main .card h2 {
   color: #fff;
-  font-size: 18px;
+  gap: 15px;
 }
-.container main .card .card-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.container main .asideServise .secrvise-header h2 {
+  font-size: 28px;
+  font-weight: 400;
 }
-.container main .card .card-bottom p {
-  color: #fff;
+.container main .asideServise .secrvise-header p {
   font-size: 14px;
+  line-height: 20px;
+}
+.container main .asideServise .secrvise-header i {
+  position: absolute;
+  font-size: 35px;
+  right: 10px;
+  cursor: pointer;
+  top: 10px;
+}
+.container main .asideServise .servise-main {
   display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.container main .asideServise .servise-main .box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-top: 20px;
+}
+.container main .asideServise .servise-main .box img {
+  width: 200px;
+  height: 200px;
+}
+.container main .asideServise .servise-main .box h2 {
+  color: #384C74;
+  margin: 20px 0;
+  font-weight: 500;
+}
+.container main .asideServise .servise-main .box p {
+  text-align: center;
+  color: #384C74;
+  max-width: 633px;
+}
+.container main .asideContact {
+  position: fixed;
+  z-index: 1000;
+  width: 800px;
+  height: 400px;
+  background-image: url(./img/images.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 50px 30px;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+  display: flex;
+  gap: 30px;
+}
+.container main .asideContact .bx-x-circle {
+  position: absolute;
+  font-size: 35px;
+  right: 10px;
+  cursor: pointer;
+  top: 10px;
+  color: #fff;
+}
+.container main .asideContact .contact-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
-.container main .card .card-bottom p i {
-  font-size: 20px;
+.container main .asideContact .contact-left h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
 }
-.container main .card .card-bottom a {
-  padding: 4px 6px;
+.container main .asideContact .contact-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #889CB9;
+}
+.container main .asideContact .contact-left form input,
+.container main .asideContact .contact-left form button {
+  height: 34px;
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  font-weight: 500;
+}
+.container main .asideContact .contact-left form input:nth-child(3) {
+  height: 100px;
+  text-align: start;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.container main .asideContact .contact-left form button {
+  color: #1648DF;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+}
+.container main .asideContact .contact-right {
+  width: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container main .asideContact .contact-right h2 {
+  font-weight: 500;
+}
+.container main .asideContact .contact-right p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container main .asideContact .contact-right p i {
+  font-size: 18px;
+}
+.container main .asideContact .contact-right h3 {
+  font-size: 14px;
+  color: #ADBED6;
+}
+.container main .asideContact .contact-right hr {
+  width: 100px;
+}
+.container main .asideComponents {
+  width: 648px;
+  height: 450px;
+  position: fixed;
+  z-index: 1000;
+  background: #fff;
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-x: scroll;
+  top: -100%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  padding: 20px 40px;
+  transition: all 0.5s ease;
+  gap: 15px;
+}
+.container main .asideComponents i {
+  position: absolute;
+  font-size: 35px;
+  right: 10px;
+  cursor: pointer;
+  top: 10px;
+  color: #000;
+}
+.container main .asideComponents h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.container main .asideComponents .inf {
+  display: flex;
+  justify-content: space-between;
+}
+.container main .asideComponents .inf ul {
+  line-height: 28px;
+  color: #889CB9;
+}
+.container main .asideComponents .inf ul li {
+  font-size: 14px;
+}
+.container main .asideComponents .inf2 {
+  max-width: 300px;
+  color: #889CB9;
+  display: flex;
+  justify-content: space-between;
+}
+.container main .asideDocumentation {
+  width: 648px;
+  height: 450px;
+  position: fixed;
+  z-index: 1000;
+  background: #fff;
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-x: scroll;
+  top: -100%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  padding: 20px 40px;
+  transition: all 0.5s ease;
+  gap: 15px;
+}
+.container main .asideServiseTop50 {
+  top: 50%;
+}
+.container main menu {
+  width: 100%;
+  margin-left: 265px;
+  display: flex;
+  flex-direction: column;
+}
+.container main menu .card-list,
+.container main menu .card-list2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+.container main menu .card-list:hover,
+.container main menu .card-list2:hover {
+  cursor: pointer;
+}
+.container main menu .card-list .card1,
+.container main menu .card-list2 .card1 {
+  background-image: url(./img/pic-1.png);
+  background-size: cover;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+.container main menu .card-list .card1:hover,
+.container main menu .card-list2 .card1:hover {
+  transform: scale(1.1);
+}
+.container main menu .card-list .card1 h1,
+.container main menu .card-list2 .card1 h1 {
+  font-size: 18px;
+  color: #fff;
+}
+.container main menu .card-list .card1 .card1-bottom,
+.container main menu .card-list2 .card1 .card1-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.container main menu .card-list .card1 .card1-bottom p,
+.container main menu .card-list2 .card1 .card1-bottom p {
   font-size: 12px;
   color: #fff;
-  border-radius: 8px 0;
+}
+.container main menu .card-list .card1 .card1-bottom p i,
+.container main menu .card-list2 .card1 .card1-bottom p i {
+  font-size: 24px;
+}
+.container main menu .card-list .card1 .card1-bottom a,
+.container main menu .card-list2 .card1 .card1-bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  font-size: 12px;
   background: #42BA96;
+  border-radius: 15px 0;
+  color: #fff;
 }
-.container main .card1 {
+.container main menu .card-list2 .card1 {
+  width: 40%;
+}
+.container main menu .card-list3 {
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.container main menu .card-list3 .card1 {
   background-image: url(./img/pic-1.png);
-  grid-area: card1;
+  background-size: cover;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
 }
-.container main .card2 {
-  grid-area: card2;
-  background-image: url(./img/pic-2.png);
+.container main menu .card-list3 .card1:hover {
+  transform: scale(1.1);
 }
-.container main .card3 {
-  grid-area: card3;
-  background-image: url(./img/pic-3.png);
+.container main menu .card-list3 .card1 h1 {
+  font-size: 18px;
+  color: #fff;
 }
-.container main .card4 {
-  grid-area: card4;
-  background-image: url(./img/pic-4.png);
+.container main menu .card-list3 .card1 .card1-bottom {
+  display: flex;
+  justify-content: space-between;
 }
-.container main .card5 {
-  grid-area: card5;
-  background-image: url(./img/pic-5.png);
+.container main menu .card-list3 .card1 .card1-bottom p {
+  font-size: 12px;
+  color: #fff;
 }
-.container main .card6 {
-  grid-area: card6;
-  background-image: url(./img/pic-6.png);
+.container main menu .card-list3 .card1 .card1-bottom p i {
+  font-size: 24px;
 }
-.container main .card7 {
-  grid-area: card7;
-  background-image: url(./img/pic-7.png);
-}
-.container main .card8 {
-  grid-area: card8;
-  background-image: url(./img/pic-8.png);
-}
-.container main .card9 {
-  grid-area: card9;
-  background-image: url(./img/pic-13.png);
-}
-.container main .card10 {
-  grid-area: card10;
-  background-image: url(./img/pic-14.png);
-}
-.container main .card11 {
-  grid-area: card11;
-  background-image: url(./img/pic-15.png);
-}
-.container main .card12 {
-  grid-area: card12;
-  background-image: url(./img/pic-16.jpg);
-}
-.container main .card13 {
-  grid-area: card13;
-  background-image: url(./img/pic-17.png);
-}
-.container main .card14 {
-  grid-area: card14;
-  background-image: url(./img/pic-18.png);
-}
-.container main .card15 {
-  grid-area: card15;
-  background-image: url(./img/pic-19.png);
-}
-.container main .card16 {
-  grid-area: card16;
-  background-image: url(./img/pic-20.png);
-}
-
-@media (max-width: 991px) {
-  .container header .contact-and-logo .contact {
-    display: none;
-  }
-  .container header .contact-and-logo .logo {
-    width: 220px;
-  }
-  .container header .header-right {
-    display: none;
-  }
-  .container header .menu {
-    display: block;
-    font-size: 29px;
-    color: #ADBED6;
-    padding: 5px 8px;
-    border: 1px solid #ccd3e9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    margin: 20px;
-  }
-  .container main aside {
-    display: none;
-  }
+.container main menu .card-list3 .card1 .card1-bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  font-size: 12px;
+  background: #42BA96;
+  border-radius: 15px 0;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
